@@ -1,6 +1,8 @@
-marks = float,int(input("enter the marks : "))
+marks = int(input("enter the marks : "))
 
-if marks >= 90:
+if marks < 0 or marks > 100:
+    print("invalid marks")
+elif marks >= 90:
     print("grade A")
 elif marks >= 50:
     print("grade B")
